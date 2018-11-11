@@ -2,9 +2,12 @@ import {
   ADD_GOAL,
   REMOVE_GOAL
 } from '../actions/goals'
+import {
+  RECEIVE_DATA
+} from '../actions/shared'
 
 // Goals Reducer to give our app's state something else to track
-export function goals(state = [], action) {
+export default function goals(state = [], action) {
   switch(action.type) {
     case ADD_GOAL :
       return state.concat([action.goal])

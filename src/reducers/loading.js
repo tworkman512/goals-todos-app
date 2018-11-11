@@ -3,7 +3,7 @@ import {
 } from '../actions/shared'
 
 // Loading Indicator Reducer
-export function loading(state = true, action) {
+export default function loading(state = true, action) {
   switch(action.type) {
     case RECEIVE_DATA :
       return false
